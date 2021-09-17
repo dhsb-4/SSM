@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dao.BaseDao">
+
+    <select id="selectAllSql" parameterType="String" resultType="map">
+        ${selSql}
+    </select>
+
+    <update id="updateSql" parameterType="String">
+        ${updSql}
+    </update>
+
+    <insert id="insertSql" parameterType="String">
+        ${insSql}
+    </insert>
+
+    <delete id="deleteSql" parameterType="String">
+        ${delSql}
+    </delete>
+
+    <select id="selectConutSql" parameterType="String" resultType="Integer">
+        ${conSql}
+    </select>
+
+</mapper>
